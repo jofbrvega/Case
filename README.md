@@ -14,7 +14,7 @@ The second page (endpage) contains a thank you message and a "Back To Startpage"
 To use this project locally:
 
 #### 1a. Clone the repository by downloading ZIP     
-    ![Download ZIP on Github](https://github.com/jofbrvega/Case/blob/main/images/downloadzip.png?raw=true)
+    ![Download ZIP on Github](/images/downloadzip.png)
 
 or 
 
