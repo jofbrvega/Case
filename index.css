@@ -1,0 +1,156 @@
+:root {
+    --main-bg-color: #EEE;
+    --header-bg-color: #FFF;
+    --footer-bg-color: #1A1A1A;
+    --button-bg-color: #60CD18;
+    --button-hover-bg-color: #60CD18;
+    --light-text-color: white;
+    --dark-text-color: #1A1A1A;
+}
+
+body {
+    position: relative;
+    font-family: sans-serif;
+    color: var(--dark-text-color);
+    background-color: var(--main-bg-color);
+    margin: 0;
+    min-height: 100vh;
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 5rem;
+        max-width: 40rem;
+        margin-inline: auto;
+        padding-inline: 1rem;
+    }
+
+    /* Header */
+    .header {
+        background-color: var(--header-bg-color);
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Form + Input */
+    #information-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    /* Form - Buttons  */
+    .submit-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 0rem 2rem 0rem;
+    }
+
+    .submit-button {
+        padding: 16px 20px;
+        background-color: #60CD18;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .submit-button:hover {
+        background-color: #45B400;
+        align-content: center;
+    }
+
+    .information-button {
+        padding: 16px 20px;
+        color: rgb(61, 61, 61);
+        text-decoration: underline;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: var(--main-bg-color);
+    }
+
+    .information-button:hover {
+        padding: 16px 20px;
+        color: var(--dark-text-color);
+        text-decoration: underline;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+    }
+
+
+    /* Informations block */
+    .information-block {
+        padding: 0rem 0rem 2rem 0rem;
+        display: none;
+    }
+
+    /* Footer  */
+    .footer {
+        position: absolute;
+        bottom: 0;
+        background-color: var(--footer-bg-color);
+        color: var(--light-text-color);
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .submitted-block {
+        text-align: center;
+    }
+
+
+    /* Media query for screens smaller tha 480 px */
+    @media (max-width: 480px) {
+        .main {
+            padding: 2rem 1rem 6rem 1rem
+        }
+
+        .information-button {
+            padding: 8px;
+            width: 100%;
+        }
+
+        .information-button:hover {
+            padding: 8px;
+            width: 100%;
+        }
+
+        .information-block {
+            padding: 0rem 0rem 3rem 0rem;
+        }
+    }
+
+    @media only screen and (max-width: 600px) and (min-width: 481px) {
+        .information-block {
+            padding: 0rem 0rem 2rem 0rem;
+        }
+    }
+}

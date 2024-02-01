@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Static Form </title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div> Formulär </div>
+    </header>
+
+    <main class="main">
+        <form id="information-form" action="submitted.html" target="_self"">
+            <label class=" label-form" for="inputFirstName"> Förnamn: </label>
+            <input type="text" name="firstname" id="inputFirstName" placeholder="Ditt Förnamn" required
+                oninvalid="this.setCustomValidity('Vänligen fyll i med ditt förnamn')"
+                oninput="this.setCustomValidity('')">
+            <br>
+            <label class="label-form" for="inputEmail"> E-post: </label>
+            <input type="email" name="epost" id="inputEmail" placeholder="exempel@gmail.com" required
+                oninvalid="this.setCustomValidity('Vänligen ange en giltig e-postadress')"
+                oninput="this.setCustomValidity('')">
+            <br>
+            <label class="label-form" for="inputZipcode"> Postnummer </label>
+            <input type="text" name="zipcode" id="inputZipcode" placeholder="123 45"
+                pattern="^[1-9][0-9]{2}\s[0-9]{2}$" required
+                oninvalid="this.setCustomValidity('Vänligen ange ett giltigt postnummer t.ex. 123 45')"
+                oninput="this.setCustomValidity('')">
+            <br>
+            <label class="label-form" for="inputParentName"> Förnamn på förälder: </label>
+            <input type="text" name="parentname" id="inputParentName" placeholder="Förnamn på förälder"
+                pattern="^[a-zA-Z]+$" required
+                oninvalid="this.setCustomValidity('Vänligen ange förnamn i rätt format A-Z')"
+                oninput="this.setCustomValidity('')">
+            <br>
+            <div class="submit-block">
+                <input class="submit-button" type="submit" value="Skicka">
+                <button onclick="showInformation()" class="information-button" type="button"> Öppna hjälp popup </button>
+            </div>
+        </form>
+        <div class="information-block">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec tincidunt est, at aliquam
+                sapien. Nam volutpat
+                lorem vel sem rutrum, a efficitur ipsum consequat. Praesent molestie lectus sem. Nullam tincidunt
+                dapibus maximus.
+                Aenean dapibus nulla urna, ac egestas odio auctor non. Suspendisse nec nulla faucibus, varius libero
+                quis, ullamcorper
+                ipsum. Pellentesque sagittis egestas lorem vestibulum fermentum. Praesent a lobortis nunc. Morbi
+                dignissim pretium elit
+                ac scelerisque. Fusce tempus risus eget elit malesuada, quis iaculis magna dapibus.
+
+                Nam congue cursus suscipit. Donec eros lectus, pellentesque a dolor in, sollicitudin cursus est. Nulla
+                facilisi. Nulla
+                at mattis mauris, ut condimentum nibh. Nunc vel purus aliquam, dapibus urna at, ultrices velit.
+                Pellentesque auctor
+                ornare elit ac varius. Vivamus tempor interdum turpis. Curabitur vitae congue lorem. Curabitur vel velit
+                vestibulum odio
+                commodo elementum.
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div> 2024 </div>
+    </footer>
+
+</body>
+
+</html>
