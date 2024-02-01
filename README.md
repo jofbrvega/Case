@@ -1,6 +1,8 @@
 # Static Form
 This project provides a static web form created with HTML, CSS and Javascript. 
 
+Supported in the latest 2 major versions of Chrome on desktop MacOS.
+
 ## Description
 This project was created for a job application, where I was tasked to build a webpage using plain HTML, CSS, and Javascript.
 
