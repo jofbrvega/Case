@@ -19,6 +19,15 @@ To use this project locally:
 or 
 
 #### 1b. Writing in your terminal/command line
-    bash
     git clone https://github.com/your-username/static-form.git
+
+## How to use the page
+1. Fill out the form with your information, you will recieve a warning if the format of your information is incorrect.
+2. Click on "Skicka" button to submit the form.
+3. If you need any information, click on "Öppna hjälp popup" button to view additional information.
+
+## Credits
+* Developed by Johanna V
+* Built with HTML, CSS and Javascript
+
 
