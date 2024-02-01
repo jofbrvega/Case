@@ -14,12 +14,11 @@ The second page (endpage) contains a thank you message and a "Back To Startpage"
 To use this project locally:
 
 #### 1a. Clone the repository by downloading ZIP     
-    ![Download ZIP on Github](/images/downloadzip.png)
+![Download ZIP on Github](/images/downloadzip.png)
 
 or 
 
 #### 1b. Writing in your terminal/command line
     bash
-        git clone https://github.com/your-username/static-form.git
-    ```
+    git clone https://github.com/your-username/static-form.git
 
