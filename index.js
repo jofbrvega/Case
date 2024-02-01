@@ -11,6 +11,7 @@ function showInformation() {
   }
 }
 
+// Function that checks that inputParentName is not the same value as inputFirstName & that it contains atleast a letter between A-Z
 function checkParentNameValue() {
   var firstName = document.getElementById("inputFirstName").value
   var parentName = document.getElementById("inputParentName").value;
@@ -31,7 +32,7 @@ function checkParentNameValue() {
   return true;
 }
 
-/*  Custom validation messages depending on page language */
+/*  Custom validation messages in Swedish and English depending on page language */
 function setCustomValidityMessages() {
   var lang = document.documentElement.lang;
 
