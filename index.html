@@ -15,7 +15,7 @@
     </header>
 
     <main class="main">
-        <form id="information-form" action="submitted.html" target="_self"">
+        <form id="information-form" action="submitted.html" target="_self" onsubmit="return checkParentNameValue()">
             <label class=" label-form" for="inputFirstName"> Förnamn: </label>
             <input type="text" name="firstname" id="inputFirstName" placeholder="Ditt Förnamn" required
                 oninvalid="this.setCustomValidity('Vänligen fyll i med ditt förnamn')"
@@ -34,8 +34,7 @@
             <br>
             <label class="label-form" for="inputParentName"> Förnamn på förälder: </label>
             <input type="text" name="parentname" id="inputParentName" placeholder="Förnamn på förälder"
-                pattern="^[a-zA-Z]+$" required
-                oninvalid="this.setCustomValidity('Vänligen ange förnamn i rätt format A-Z')"
+                required
                 oninput="this.setCustomValidity('')">
             <br>
             <div class="submit-block">

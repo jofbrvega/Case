@@ -11,6 +11,26 @@ function showInformation() {
   }
 }
 
+function checkParentNameValue() {
+  var firstName = document.getElementById("inputFirstName").value
+  var parentName = document.getElementById("inputParentName").value;
+
+  if (firstName == parentName) {
+    document
+    .getElementById("inputParentName")
+    .setCustomValidity("Förnamn på förälder får inte vara samma som ditt förnamn");
+    return false;
+  }
+  var parentNamePattern = /^[a-zA-Z]+$/ ;
+  if (!parentNamePattern.test(parentName)) {
+    document
+      .getElementById("inputParentName")
+      .setCustomValidity("Vänligen ange förnamn i rätt format A-Z");
+      return false;
+  }
+  return true;
+}
+
 /*  Custom validation messages depending on page language */
 function setCustomValidityMessages() {
   var lang = document.documentElement.lang;
@@ -25,9 +45,6 @@ function setCustomValidityMessages() {
     document
       .getElementById("inputZipcode")
       .setCustomValidity("Vänligen ange ett giltigt postnummer t.ex. 123 45");
-    document
-      .getElementById("inputParentName")
-      .setCustomValidity("Vänligen ange förnamn i rätt format A-Z");
   } else {
     // Default to English messages
     document
