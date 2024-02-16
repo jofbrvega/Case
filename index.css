@@ -74,7 +74,7 @@ select {
 .submit-button {
     padding: 16px 20px;
     background-color: var(--button-bg-color);
-    color: white;
+    color: var(--dark-text-color);
     border-radius: 8px;
     border: none;
     font-weight: 600;
@@ -83,6 +83,7 @@ select {
 
 .submit-button:hover {
     background-color: var(--button-hover-bg-color);
+    color: var(--dark-text-color);
     align-content: center;
 }
 

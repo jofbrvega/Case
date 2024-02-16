@@ -14,9 +14,7 @@ function showInformation() {
 // Function that checks that inputParentName is not the same value as inputFirstName & that it contains atleast a letter between A-Z
 function checkParentNameValue() {
   var firstName = document.getElementById("inputFirstName").value.toLowerCase();
-  var parentName = document
-    .getElementById("inputParentName")
-    .value.toLowerCase();
+  var parentName = document.getElementById("inputParentName").value.toLowerCase();
 
   if (firstName == parentName) {
     document
